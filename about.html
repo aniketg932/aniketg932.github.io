@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us:- </h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="C:\Users\KIIT\Pictures\mun..4 (2).jpg" style="width:75%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <div class="center">
+          <h1 class="section-heading">More about me.</h1>
+          <span class="divider center"></span>
+          <p class="contact-description">
+        <p>Hi,I am Aniket, pursuing software engineering from KIIT,Bhubneshwar studying Computer Science and System Engineering. 
+        I have been learning web development from last few weeks and encourges myself to utilise my work by working in the project.
+        So,i develope webpages for web applications. I have get myself acquainted with CSS as a frontend developerand try to provide pixel-perfect experiences.
+        I am passionate about designing a page in a efficient way with the user satisfaction and always look for opportunites to work and gain as much knowledge i could learn.
+        Basically my goal is to get acquainted and fluent with the framework and provide authentication to my website to  make is usable and efficient.
+         </p>
+       </div>
+       <div>
+        <a class="block-btn" href="files/Vaibhav_Resume.pdf" target="_blank">
+          <span class="text">View my full résumé</span>
+          <img class="icon" src="img/icons/download.png" alt="download resume">
+        </a>
+       </div>
+
+       <section id="skills-section" class="section">
+        <div class="section-wrapper">
+          <div class="fade-in">
+            <h1 class="section-heading">Skills</h1>
+            <span class="divider"></span>
+            <div class="skills-flex-wrapper">
+              <div class="flex-item dev-wrapper">
+                <h2 class="skills-heading">
+                  <span class="sprite dev"></span> <span>Development</span>
+                </h2>
+                <ul>
+                  <li class="dev-item">HTML5</li>
+                  <li class="dev-item">CSS3</li>
+                  <li class="dev-item">Bootstrap4</li>
+                  <li class="dev-item">JavaScript</li>
+                  <li class="dev-item">Python</li>
+                  <li class="dev-item">React</li>
+                  <li class="dev-item">Sass</li>
+                  <li class="dev-item">Node.js</li>
+                  <li class="dev-item">MongoDB</li>
+                </ul>
+              </div>
+                </div>
+              </div>
+            </div> 
+      </section>
+
+
+
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
