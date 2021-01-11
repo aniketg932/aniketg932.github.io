@@ -127,7 +127,7 @@ hr.rounded {
   }
   
 hr.rounded1 {
-    border-top: 5px solid rgb(10, 138, 212);
+    border-top: 3px solid rgb(10, 138, 212);
     border-radius: 5px;
-    width:92%;
+    width:90%;
 } 
