@@ -1,182 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="buttn.css">
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-  .carousel-inner img {
-      width:60%; /* Set width to 100% */
-      margin: auto;
-      height:120px;
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
   }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
   }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      
+      <li class="collapse navbar-collapse" id="myNavbar"><a href="#">HOME</a></li>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">HOME</a></li>
-       <li><a href="LOg in.html">USER ID</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="">SUPPORT</a></li>
-        <li><a href="theme..html">THEME</a></li>
-      </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+        <li><a href="LOg in.html">REGISTER</a></li>
+      </ul> 
     </div>
-  </div>
 </nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src= "technology.jpg" alt="Image">
-        <div class="carousel-caption">
-          <h3>Welcome to my blog</h3>
-            <p><a href="https://aniketguptasite.wordpress.com/"> All updates</a></p>
-        </div>      
-      </div>
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="Aniket.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h1 class="section-heading">I'm Aniket Gupta.</h1>
+  <a class="btn main-action"> Blogger | Web Developer | Content Writer | App Developer </a>
+</div>
 
-      <div class="item">
-        <img src="Future.jpg" alt="Image">
-        <div class="carousel-caption">
-          <h3>FUTURE OF TECHNOLOGY</h3>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="futuristic.jpg" alt="Image">
-        <div class="carousel-caption">
-        <h3>CHANGING THE WORLD.</h3>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div> 
-<div class="container text-center">    
-  <h3>BLOGGERS PAGE</h3><br>
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">About me !</h3>
+  <p> Hi,I am Aniket, pursuing software engineering from KIIT..... Rest info Please visit the link</p>
+  <a href="about.html">ABOUT</a> </div>
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Blog Posts</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <img src="sales-artificial-intelligence1.jpg "class="img-responsive" style="width:100%" alt="Image">
-      <p><a href="https://aniketguptasite.wordpress.com/2018/12/13/artificial-intelligence/">AIRTIFICIAL INTELIIGENCE</a></p>
+        <img src="sales-artificial-intelligence1.jp "class="img-responsive" style="width:100%" alt="Image">
+        <p><a href="https://aniketguptasite.wordpress.com/2018/12/13/artificial-intelligence/">AIRTIFICIAL INTELIIGENCE</a></p>
     </div>
     <div class="col-sm-4"> 
-      <img src="travel.jpg "class="img-responsive" style="width:100%" alt="Image">
-      <p><a href="https://aniketguptasite.wordpress.com/2019/12/24/time-travel/">TIME TRAVEL</a></p>    
+        <img src= "travel.jpg "class="img-responsive" style="width:100%" alt="Image">
+        <p><a href="https://aniketguptasite.wordpress.com/2019/12/24/time-travel/">TIME TRAVEL</a></p>
     </div>
     <div class="col-sm-4"> 
-    <img src="hands.jpg" class="img-responsive" style="width:90%"  style="height:60px"  alt="Image">
-     <p><a href="https://aniketguptasite.wordpress.com/2020/04/12/step-up-india/">STEP-UP-INDIA</a></p> 
+        <img src="hands.jpg" class="img-responsive" style="width:90%"  style="height:60px"  alt="Image">
+        <p><a href="https://aniketguptasite.wordpress.com/2020/04/12/step-up-india/">STEP-UP-INDIA</a></p> 
     </div>
   </div>
-</div><br>
 
-
-  <a class="block-btn" href="https://aniketguptasite.wordpress.com/" target="_blank">
-    <span class="text">See more posts on my wordpress site</span> </a>
-
-
-
-
- 
-   <id="contact-section" class="section gap">
-    <div class="bg skrollable skrollable-between" data-anchor-target="#contact-section" data-bottom-top="transform: translate3d(0px, -150px, 0px);" data-top-bottom="transform: translate3d(0px, 150px, 0px);" style="transform: translate3d(0px, -23.9881px, 0px);"></div>
-    <div class="overlay-wrapper">
-      <div class="fade-in">
-        <div class="center">
-          <h1 class="section-heading">Get In Touch</h1>
-          <span class="divider center"></span>
-          <p class="contact-description">
-             Have an interesting project in mind or just want to say hi? Feel
-            free to contact me!
-          </p>
-          </div>
-        </div>
-      </div>
-  </section> 
-
-
-
-  <div class="column">
-    <!-- <i class="fa fa-map-marker"></i> -->
-    <h2>Mailing Address</h2>
-    <span class="divider"></span>
-    <p>School of Computer Engineering</p>
-    <p>KIIT University, Bhubaneswar</p>
-    <p>Odisha, India - 751024</p>
-    <span class="divider center"></span>
+  <div class="container text-center" href="https://aniketguptasite.wordpress.com/" target="_blank">
+    <a class="button" href="https://aniketguptasite.wordpress.com/" target="_blank">
+     <img class="icon" src="blog_img1.jpg " alt="View my Posts"> </a> 
   </div>
+</div>
 
 
-  <footer class="container-fluid text-left myCarousel"> 
+<footer class="container-fluid bg-4 text-center">
     <h2 class="section-heading">Blog at aniketguptasite.com</h2>
-  
-          <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          </head>
-          <body>
-        <footer class="container-fluid text-center">
-          <p><p>©&nbsp;&nbsp;Aniket Gupta 2021. All Rights Reserved.</p> </p>      
-          <footer class="container-fluid text-center">
-          <a href="https://github.com/aniketg932" class="fa fa-github"></a>
-          <a href="https://www.quora.com/profile/Aniket-Gupta-143" class="fa fa-quora"></a>
-          <a href="https://www.linkedin.com/in/aniket-gupta-82aa61159/" class="fa fa-linkedin"></a>
-          <a href="https://www.instagram.com/_aniket_gupta.47/" class="fa fa-instagram"></a>
-          </footer>
-         </footer>
-        </body>   
-     </footer> 
+    <hr class="rounded">
+    <div class="overlay-wrapper">
+        <div class="fade-in">
+          <div class="center">
+            <h1 class="section-heading">Get In Touch</h1>
+            <p class="contact-description">
+              Have an interesting topics in mind or just want to say hi? Feel free to contact me! </p>
+              <hr class="rounded">
+          </div>
+          <div class="contact-wrapper row">
+            <div class="column">
+              <!-- <i class="fa fa-map-marker"></i> -->
+              <h2>Mailing Address</h2>
+              <hr class="rounded">
+              <p>School of Computer Engineering</p>
+              <p>KIIT University, Bhubaneswar</p>
+              <p>Odisha, India - 751024</p>
+            </div>
+            <div class="social-column">
+              <h2>Social Accounts</h2>
+              <hr class="rounded1">
+              <div class="socials-col1">
+                <div style="width: 18%; padding-bottom: 25px;">
+                  <a href="mailto:aniketg932@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+                </div>
+                <div style="width: 15%;">
+                  <a href="https://github.com/aniketg93" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                </div>
+              </div>
+              <div class="socials-col2">
+                <div style="width: 15%; padding-bottom: 25px;">
+                  <a href="https://www.linkedin.com/in/aniket-gupta-82aa61159/"  target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                </div>
+                <div style="width: 15%;">
+                  <a href="https://www.quora.com/profile/Aniket-Gupta-143" target="_blank"><i class="fa fa-quora fa-2x"></i></a>
+                </div> </div>
+            </div> </div> </div> </div>
+    
+ <head> <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
 
-
- </body>
+<body> <footer class="container-fluid text-center">
+    <p><p>©&nbsp;&nbsp;Aniket Gupta 2021. All Rights Reserved.</p> </p>
+   </body>   
+</footer> 
+</body>
 </html>
